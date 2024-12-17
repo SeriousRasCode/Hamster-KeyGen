@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የሃምስተር ጨዋታዎች ቁልፍ ጀነሬተር</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <h1 class="tit">የሃምስተር ጨዋታዎች ቁልፍ ጀነሬተር</h1>
+        <div class="form-group">
+            <label for="gameSelect">ጨዋታ ምረጥ</label>
+            <select id="gameSelect">
+                <option value="1">Bike</option>
+                <option value="2">Cube</option>
+                <option value="3">Cafe Dash</option>
+                <option value="4">Train</option>
+                <option value="5">Merge</option>
+                <option value="6">Twerk</option>
+                <option value="7">Polysphere</option>
+		<option value="8">Mow and Trim</option>
+		<option value="9">Mud Racing</option>
+
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label id="keyCountLabel" for="keyCountSelect">የቁልፍ ብዛት:</label>
+            <select id="keyCountSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+		<option value="12">12</option>
+		<option value="16">16</option>
+                
+            </select>
+        </div>
+        <button id="startBtn">ቁልፍ ጀነሬት አድርግ</button>
+
+        <label>
+            <input type="checkbox" id="logCheckbox"> ሎግ አብራ
+        </label>
+        <textarea id="logArea" rows="3" readonly style="width: 100%; resize: none; font-size: 12px; display: none;"></textarea>
+        
+        <div id="progressContainer" class="hidden">
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+            <div id="progressText">0%</div>
+            <div id="progressLog">በመጀመር ላይ...</div>
+            <div id="countdownContainer">
+            <p>ቀጣዩ ሂደት በ<span id="countdownTimer"></span> ሰከንዶች ይጀምራል </p>
+            </div>
+        </div>
+        <div id="keyContainer" class="hidden">
+            <h3 id="generatedKeysTitle" class="hidden">ጀነሬት የተደረጉ ቁልፎች:</h3>
+            <div id="keysList"></div>
+            <br>
+            <button id="copyAllBtn" class="hidden">ሁሉንም ቁልፍ ኮፒ አድርግ</button>
+            <br>
+            <div id="copyStatus" class="hidden">ኮፒ ሆኗል!</div>
+            <br>
+            <button id="generateMoreBtn">ተጨማሪ ቁልፍ ጀነሬት አርግ</button>
+        </div>
+        <div class="mycodes">
+            <p>
+                ቁልፍ ጀነሬት ለማድረግ እስከ 10 ደቂቃ ሊፈጅ ይችላል<br>
+                የማይሰራ መስሎ ከተሰማዎት <a href="https://t.me/SeriousRas">ሰሪዉን ያናግሩ</a>
+            </p>
+            
+
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
